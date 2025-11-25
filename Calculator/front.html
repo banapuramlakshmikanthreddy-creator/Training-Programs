@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="front.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div id="calculator-class" style="text-align: center; margin-top: 3cm;">
+        <h1 style="margin-top: 2cm;">Simple Calculator</h1>
+        <div id="first-div">
+            <input type="number" id="input1" placeholder="Enter first number">
+            <input type="number" id="input2" placeholder="Enter second number">
+            <div id="symbols" style="padding-top: 0.5cm;">
+                <button onclick="addition()">+</button> 
+                <button onclick="subtraction()">-</button>
+                <button onclick="multiplication()">*</button>    
+                <button onclick="division()">/</button>
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="front.js"></script>
+</body>
+</html>
