@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" >
+    <title>Document</title>
+</head>
+<body>
+   <class name="container" id="myclass">
+        <div id="temp">
+            <p>Temperature</p>
+            <h1 id="realtemp"></h1>
+        </div>
+        <div id="temp2">
+            <button onclick="increment()">INCREASE </button>
+            <button onclick ="settozero()">set to zero</button>
+            <button onclick="decrement()">DECFREASE</button>
+        </div>
+   </class>
+    <script>
+        let temp = document.getElementById("realtemp");
+        let count =0;
+        temp.innerHTML = count;
+        function increment(){
+            count++;
+            temp.innerHTML= count;
+        }
+        function decrement(){
+            count--;
+            temp.innerHTML= count;
+        }
+        function settozero(){
+            count =0;
+            temp.innerHTML = count;
+        }
+    </script>
+</body>
+</html>
